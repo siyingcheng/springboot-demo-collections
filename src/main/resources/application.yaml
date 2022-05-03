@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/robot
+    username: owen
+    password: Owen1988
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        hbm2ddl:
+          auto: update
+    open-in-view: true
+  security:
+    user:
+      name: owen
+      password: $2a$10$lRF/EDQWaRHJ0ESd8xJRDe4liRcu8P98.i87v41I9draEtjLwDzMS
+      roles:
+        - admin
